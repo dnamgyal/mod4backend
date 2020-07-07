@@ -22,8 +22,14 @@ item4 = Item.create(name: "blu cardigan", category: "top", brand: "Zoomies", ima
 item5 = Item.create(name: "blu stilettos", category: "footwear", brand: "H&M", image: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png", user_id: user.id)
 
 outfit1 = Outfit.create(name: "summerlook", user_id: user.id)
+outfit2 = Outfit.create(name: "winterlook", user_id: user.id)
 
 OutfitItem.create(outfit_id: outfit1.id, item_id: item1.id)
 OutfitItem.create(outfit_id: outfit1.id, item_id: item2.id)
 OutfitItem.create(outfit_id: outfit1.id, item_id: item3.id)
 OutfitItem.create(outfit_id: outfit1.id, item_id: item5.id)
+
+
+OutfitItem.create(outfit_id: outfit2.id, item_id: item1.id)
+OutfitItem.create(outfit_id: outfit2.id, item_id: item2.id)
+OutfitItem.create(outfit_id: outfit2.id, item_id: item3.id)

@@ -4,9 +4,4 @@ class Outfit < ApplicationRecord
   has_many :items, through: :outfit_items
 
 
-
-
-  def items
-    self.items
-  end
 end
